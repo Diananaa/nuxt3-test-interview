@@ -1,10 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [
-    '@nuxtjs/tailwindcss',
-    'nuxt-highcharts',
-    'nuxt3-leaflet'
-  ],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-highcharts', 'nuxt3-leaflet', "@nuxt/image"],
 
 })
