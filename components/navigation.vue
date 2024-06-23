@@ -6,7 +6,7 @@
             </div>
             <div class="space-x-3">
                 <NuxtLink class="hover:bg-slate-300"  :to="{ name: 'maps' }">maps</NuxtLink>
-                <NuxtLink class="hover:bg-slate-300"  :to="{ name: 'chart' }">chart</NuxtLink>
+                <NuxtLink class="hover:bg-slate-300"  :to="{ name: 'chart-covid' }">chart</NuxtLink>
             </div>
         </div>
     </div>

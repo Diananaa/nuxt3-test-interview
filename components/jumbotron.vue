@@ -3,13 +3,10 @@
         <div class="flex  flex-col-reverse md:flex-row md:justify-between px-4 md:w-[1000px]">
             <div class="md:max-w-[30%] py-2 flex flex-col px-4 items-center space-y-5 backdrop-blur-sm bg-white/30">
                 <div class="flex space-x-2 md:space-x-0 md:flex-col">
-                    <p class="text-base md:text-3xl ">Monas</p>
-                    <p class="text-base md:text-3xl">Monumen Nasional</p>
+                    <p class="text-base md:text-3xl ">Pandemi COVID-19 di Indonesia</p>
                 </div>
                 <div>
-                    Monas, short for Monumen Nasional, is a 132-meter obelisk located in Merdeka Square, Central
-                    Jakarta,
-                    Indonesia1. It was built to commemorate the struggle for Indonesian independence
+                    Pandemi Covid-19 di Indonesia merupakan bagian dari pandemi penyakit koronavirus 2019 (Covid-19) yang sedang berlangsung di seluruh dunia. Penyakit ini disebabkan oleh koronavirus sindrom pernapasan akut berat 2 (SARS-CoV-2).
                 </div>
             </div>
             <div class="md:hidden flex justify-center">
