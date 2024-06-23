@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "nama_rs": "RSUP Dr. Cipto Mangunkusumo",
+        "provinsi": "DKI Jakarta",
+        "kota": "Jakarta Pusat",
+        "latitude": -6.19965,
+        "longitude": 106.84704,
+        "jumlah_pasien_covid": 150
+    },
+    {
+        "id": 2,
+        "nama_rs": "RSUP Dr. Sardjito",
+        "provinsi": "Daerah Istimewa Yogyakarta",
+        "kota": "Yogyakarta",
+        "latitude": -7.76962,
+        "longitude": 110.38116,
+        "jumlah_pasien_covid": 120
+    },
+    {
+        "id": 3,
+        "nama_rs": "RSU Dr. Soetomo",
+        "provinsi": "Jawa Timur",
+        "kota": "Surabaya",
+        "latitude": -7.26528,
+        "longitude": 112.75579,
+        "jumlah_pasien_covid": 200
+    },
+    {
+        "id": 4,
+        "nama_rs": "RSUP Hasan Sadikin",
+        "provinsi": "Jawa Barat",
+        "kota": "Bandung",
+        "latitude": -6.89549,
+        "longitude": 107.60825,
+        "jumlah_pasien_covid": 180
+    },
+    {
+        "id": 5,
+        "nama_rs": "RSUD Ulin",
+        "provinsi": "Kalimantan Selatan",
+        "kota": "Banjarmasin",
+        "latitude": -3.31754,
+        "longitude": 114.58948,
+        "jumlah_pasien_covid": 90
+    },
+    {
+        "id": 6,
+        "nama_rs": "RSUP H. Adam Malik",
+        "provinsi": "Sumatera Utara",
+        "kota": "Medan",
+        "latitude": 3.55673,
+        "longitude": 98.63116,
+        "jumlah_pasien_covid": 130
+    },
+    {
+        "id": 7,
+        "nama_rs": "RSUD Dr. Soetomo",
+        "provinsi": "Jawa Timur",
+        "kota": "Surabaya",
+        "latitude": -7.2756,
+        "longitude": 112.7554,
+        "jumlah_pasien_covid": 140
+    },
+    {
+        "id": 8,
+        "nama_rs": "RSUD Sanglah",
+        "provinsi": "Bali",
+        "kota": "Denpasar",
+        "latitude": -8.6705,
+        "longitude": 115.2126,
+        "jumlah_pasien_covid": 110
+    },
+    {
+        "id": 9,
+        "nama_rs": "RSUD Dr. Moewardi",
+        "provinsi": "Jawa Tengah",
+        "kota": "Surakarta",
+        "latitude": -7.5635,
+        "longitude": 110.8196,
+        "jumlah_pasien_covid": 170
+    },
+    {
+        "id": 10,
+        "nama_rs": "RSUD Dr. Kariadi",
+        "provinsi": "Jawa Tengah",
+        "kota": "Semarang",
+        "latitude": -6.9904,
+        "longitude": 110.4229,
+        "jumlah_pasien_covid": 190
+    }
+]

@@ -33,6 +33,7 @@ export default {
   methods: {
     async fetchData(symbol) {
       const { price } = await fetch("/ohlcv.json").then((r) => r.json());
+      console.log('price',price)
       this.series.push(
         {
           id: symbol.toLowerCase(),
