@@ -1,40 +1,59 @@
 <template>
-  <Highcharts :options="chartOptions" />
+  <highstock :options="chartOptions" />
 </template>
 
-<script setup>
-import { ref, onMounted } from 'vue'
-// import { useHighcharts } from '@nuxtjs/highcharts'
-
-// const { Highcharts } = useHighcharts()
-
-const chartOptions = ref({
-  chart: {
-    type: 'line'
+<script>
+export default {
+  data() {
+    return {
+      symbol: "AAPL",
+      watchers: ["options.series"],
+      series: [],
+    };
   },
-  title: {
-    text: 'COVID-19 Data'
+  computed: {
+    chartOptions() {
+      return {
+        chart: {
+          type: "candlestick",
+        },
+        rangeSelector: {
+          selected: 4,
+        },
+        title: {
+          text: `${this.symbol} Stock Price`,
+        },
+        series: this.series,
+      };
+    },
   },
-  xAxis: {
-    categories: []
+  mounted() {
+    this.fetchData("AAPL");
   },
-  series: [
-    {
-      name: 'Cases',
-      data: []
-    }
-  ]
-})
-
-onMounted(async () => {
-  const response = await fetch('https://disease.sh/v3/covid-19/historical/all?lastdays=30')
-  const data = await response.json()
-console.log('data', data)
-  chartOptions.value.xAxis.categories = Object.keys(data.cases)
-  chartOptions.value.series[0].data = Object.values(data.cases)
-})
+  methods: {
+    async fetchData(symbol) {
+      const { price } = await fetch("/ohlcv.json").then((r) => r.json());
+      this.series.push(
+        {
+          id: symbol.toLowerCase(),
+          name: symbol,
+          data: price.map((entry) => {
+            return [
+              entry.epochTime.epochTime,
+              entry.open.val,
+              entry.high.val,
+              entry.low.val,
+              entry.close.val,
+            ];
+          }),
+        },
+        {
+          // Example with EMA
+          type: "ema",
+          linkedTo: symbol.toLowerCase(),
+        }
+      );
+    },
+  },
+};
 </script>
-
-<style scoped>
-/* Gaya CSS khusus jika diperlukan */
-</style>
