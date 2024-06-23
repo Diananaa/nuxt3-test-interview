@@ -5,7 +5,6 @@
                 <p>Diana</p>
             </div>
             <div class="space-x-3">
-                <NuxtLink class="hover:bg-slate-300 " :to="{ name: 'about' }">about</NuxtLink>
                 <NuxtLink class="hover:bg-slate-300"  :to="{ name: 'maps' }">maps</NuxtLink>
                 <NuxtLink class="hover:bg-slate-300"  :to="{ name: 'chart' }">chart</NuxtLink>
             </div>
