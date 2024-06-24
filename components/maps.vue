@@ -1,6 +1,6 @@
-<template>
-    <div style="height:100vh; width:100vw">
-     
+<template >
+    <section id="maps" class="z-0 flex justify-center">
+    <div class="w-full h-[60vh]">
         <LMap ref="map" :zoom="5" :center="[0.3686169, 119.0321325]">
             <LTileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution="&amp;copy; <a href=&quot;https://www.openstreetmap.org/&quot;>OpenStreetMap</a> contributors"
@@ -16,6 +16,7 @@
               </LMarker>
         </LMap>
     </div>
+    </section>
 </template>
 
 <script >

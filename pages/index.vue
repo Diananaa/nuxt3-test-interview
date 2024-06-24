@@ -1,8 +1,8 @@
 <template>
   <Navigation />
-  <div class="">
-    <Jumbotron />
+  <Jumbotron />
+  <Maps />
+  <div >
+    <Chart />
   </div>
-
-  <p>hehe</p>
 </template>
